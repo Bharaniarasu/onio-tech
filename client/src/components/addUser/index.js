@@ -25,9 +25,8 @@ const AddUser = () => {
       .required("**Enter a valid Name**")
       .min(3, "**Enter a valid Name**"),
     age: yup
-      .string()
-      .required("**Enter a valid DOB **")
-      .max(120, "**Enter a valid age**"),
+      .string("**Enter a valid DOB **")
+      .required("**Enter a valid DOB **"),
     sex: yup.string().required("**Please select your gender**"),
     mobile: yup
       .string()
